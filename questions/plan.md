@@ -1,0 +1,5 @@
+Five explorers have been selected to go on a voyage to the Arctic. Before they can leave, they must pack all of the gear required for their expedition to be deemed a success. The pilot has told everyone that they can bring a maximum of 20kgs each. If this value is exceeded, the plane will be too heavy to take off.
+
+All of the explorers have given the baggage handler a list(your puzzle input). This list contains the weights of each individual item that they have packed. If someones total luggage weight exceeds 20kgs, the baggage handler will start to remove items from the bags. They will begin with taking out the lighter items, then move up the list to heavier items. They will keep removing items until the weight is equal, or below 20kg.
+
+Find out how many items the baggage handler needs to remove for the plane to take off successfully.
