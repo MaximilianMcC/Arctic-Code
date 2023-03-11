@@ -15,3 +15,11 @@ Previous research states that the average weight of a penguin is 23kg, and the a
 Using the sensor data, figure out if there are more penguins or polar bears. If there are more polar bears, return true, and if there are more penguins return false.
 
 # ----------------------------------------------------------------------------------------------------------
+
+Two of the explorers have been chosen to get a list of ice cap temperatures over the course of a week. They check the temperature every hour of the day over seven days. The two explorers take it in turns going out to check the temperature. The device they use shows the temperature in both celsius and fahrenheit; the temperature must be recorded in celsius, but some of the temperatures are recorded in fahrenheit by accident. The fahrenheit values need to be found and converted to match the celsius values, but the celsius values must not be converted by accident.
+
+As there are too many values, the explorers need a system to detect and convert the fahrenheit values for them. To convert fahrenheit to celsius, the formula is (a°F − 32) × 5/9 = b°C.
+
+Write a program to go through each value in the explorers' list (your puzzle input) and detect if any of them are fahrenheit, and if so then convert them to celsius.
+
+# ----------------------------------------------------------------------------------------------------------
