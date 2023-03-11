@@ -9,9 +9,31 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
-// Add the public directory
+// Add the public directory's
 app.use(express.static(path.join(__dirname, "public")));
 
+
+// Get the questions
+app.get("/question/:questionNumber", (request, response) => {
+
+    // Get the question number
+    const questionNumber = request.params.questionNumber;
+
+    // Check for what question is needed
+    switch (questionNumber) {
+
+        case "1":
+            
+            // Send back the question HTML file
+            response.sendFile(__dirname + "/questions/question1.html");
+            break;
+    
+        default:
+            response.sendStatus(404);
+            break;
+    }
+
+});
 
 
 // Generate data
@@ -81,7 +103,7 @@ function generateData(questionNumber) {
             // Return the data
             response = data
             break;
-    
+
         default:
             response = 500;
             break;
